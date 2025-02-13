@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Hotel Hare Krishna</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <style>
+         /* body {
+             font-family: Arial, sans-serif;
+             line-height: 1.6;
+             margin: 20px;
+             background-color: #f9f9f9;
+             color: #333;
+         }
+         .container {
+             max-width: 800px;
+             margin: auto;
+             background: #fff;
+             padding: 20px;
+             border-radius: 8px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         } */
+         /* h1 {
+             text-align: center;
+             color: #4CAF50;
+             font-size: 55px;
+         }
+         .feature {
+             margin: 20px 0;
+             text-align: left;
+         }
+         .feature span {
+             font-size: 1.5rem;
+         }
+         .feature p {
+            font-size: 17px;
+            line-height: 36px;
+            color: #313131;
+         }
+         .book-now {
+             text-align: center;
+             margin-top: 30px;
+         }
+         .book-now a {
+             background-color: #4CAF50;
+             color: white;
+             padding: 10px 20px;
+             text-decoration: none;
+             border-radius: 5px;
+             font-size: 1.2rem;
+         }
+         .book-now a:hover {
+             background-color: #45a049;
+         } */
+
+
+         .our {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+        /* .titlepage h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #4A5568;
+            text-align: center;
+            margin-bottom: 40px;
+        } */
+        .titlepage .text_norlam {
+            font-weight: normal;
+        }
+        .features-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .feature {
+            flex: 1 1 45%;
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 20px;
+            background: #E6FFFA;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature span {
+            font-size: 2.5rem;
+        }
+        .feature strong {
+            display: block;
+            margin: 15px 0;
+            font-size: 1.4rem;
+            color: #2C7A7B;
+        }
+        .feature p {
+            font-size: 1.3rem;
+            color: #4A5568;
+        }
+        .book-now {
+            margin-top: 40px;
+        }
+        .book-now a {
+            background-color: #2F855A;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            transition: background-color 0.3s ease;
+        }
+        .book-now a:hover {
+            background-color: #276749;
+        }
+
+        .contact {
+            padding: 20px;
+            background: #fff;
+            text-align: left;
+        }
+        .contact p {
+            font-size: 1.2rem;
+            color: #2C7A7B;
+            margin: 10px 0;
+            font-weight: 600;
+        }
+        .contact span {
+            margin-right: 10px;
+            font-size: 1.5rem;
+            color: #2F855A;
+        }
+        @media (max-width: 768px) {
+            .feature {
+                flex: 1 1 100%;
+            }
+            .logo {
+                width: 100px;
+                height: 100px;
+                font-size: 2.5rem;
+            }
+            .titlepage h2 {
+                font-size: 2.5rem;
+            }
+            .about h2 {
+                font-size: 2rem;
+            }
+        }
+     </style>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html">HHK</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#about">About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#contact">Contact us</a>
+                              </li>
+                           </ul>
+                           <!-- <div class="sign_btn"><a href="#">Sign in</a></div> -->
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="text-bg">
+                     <div class="padding_lert">
+                        <h1>WELCOME TO HOTEL HARE KRISHNA </h1>
+                        <span>Serenity Meets Nature</span>
+                        <p>Hotel Hare Krishna brings the experience of hotels or staycation from the outset of tourism industry in Saputara- A mini kashmir of Gujarat. <br>The hotel is very well connected to main locations for sight seeing and spending time with nature in Saputara.<br> This is ideal place to stay in for a nature loving person.</p>
+                        <!-- <a href="#">Read More</a> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- form_lebal -->
+      <!-- <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <form class="form_book">
+                     <div class="row">
+                        <div class="col-md-3">
+                           <label class="date">ARRIVAL DATE</label>
+                           <input class="book_n"  type="date" >
+                        </div>
+                        <div class="col-md-3">
+                           <label class="date">DEPARTURE DATE</label>
+                           <input class="book_n"  type="date" >
+                        </div>
+                        <div class="col-md-3">
+                           <label class="date">PERSON</label>
+                           <input class="book_n" placeholder="2" type="type" name="2">
+                        </div>
+                        <div class="col-md-3">
+                           <button class="book_btn">Book Now</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <!-- end form_lebal -->
+      <!-- choose  section -->
+      <div class="choose">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="choose_box">
+                     <div class="titlepage">
+                        <h2><span class="text_norlam">Welcome to Your Home </span> <br>Away from Home</h2>
+                     </div>
+                     <p>Discover the perfect blend of comfort, tranquility, and personalized hospitality at Hotel Hare Krishna. Nestled in the heart of Saputara, our guest house offers a serene escape from the everyday hustle, whether you're traveling for business, leisure, or a bit of both.</p>
+                     <!-- <a class="read_more" href="#">See More</a> -->
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="img_box">
+                           <figure><img src="images/img1.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="img_box">
+                           <figure><img src="images/img2.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="img_box">
+                           <figure><img src="images/img3.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end choose  section -->
+      <!-- our  section -->
+      <div class="our">
+         <div class="titlepage">
+             <h2><span class="text_norlam">Why </span><br>Choose Us?</h2>
+         </div>
+         <div class="features-container">
+             <div class="feature">
+                 <span>🌿</span>
+                 <strong>Peaceful Surroundings:</strong>
+                 <p>Relax in beautifully designed rooms that reflect the natural beauty of our surroundings. Wake up to the sounds of nature and enjoy breathtaking views right from your window.</p>
+             </div>
+ 
+             <div class="feature">
+                 <span>🛎️</span>
+                 <strong>Comfort & Style:</strong>
+                 <p>Each room is thoughtfully furnished with cozy beds, modern amenities, and charming decor to make your stay as relaxing as possible.</p>
+             </div>
+ 
+             <div class="feature">
+                 <span>🍳</span>
+                 <strong>Delicious Breakfast Included:</strong>
+                 <p>Start your day with a hearty, home-cooked breakfast made from fresh, local ingredients, served in our welcoming dining area or outdoors in the garden.</p>
+             </div>
+ 
+             <div class="feature">
+                 <span>📶</span>
+                 <strong>Stay Connected:</strong>
+                 <p>Enjoy complimentary high-speed Wi-Fi throughout the property, perfect for staying in touch with loved ones or catching up on work.</p>
+             </div>
+ 
+             <div class="feature">
+                 <span>🌍</span>
+                 <strong>Prime Location:</strong>
+                 <p>Conveniently located near [local attractions, landmarks, or business hubs], our guest house makes it easy to explore everything [City/Region] has to offer.</p>
+             </div>
+         </div>
+         <div class="book-now">
+             <a href="#">Book Your Stay Today!</a>
+         </div>
+     </div>
+      
+      <!-- end our  section -->
+      <!-- about -->
+      <div id="about"  class="about">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="about_text">
+                     <div class="titlepage">
+                        <h2>About Our Hotel</h2>
+                        <p>With a legacy spanning over four decades, we are proud to be one of the oldest hotels in Saputara. Nestled close to the serene lake, our hotel offers an oasis of tranquility and comfort. Known for our warm hospitality and affordable rates, we have become the preferred choice for travelers seeking both relaxation and adventure in the heart of nature. </p>
+                        <p><b>Miss Pramilaben K. Sualy</b> laid the foundation of this property in 1991 with deep emotion and passion, aiming to create a uniquely designed structure that stands as an architectural beauty—small yet exquisite for comfortable living. Her vision not only shaped this remarkable space but also served as an inspiration for women's empowerment while extending warm hospitality to tourists.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img src="images/bunglow_new.jpeg" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- testimonial -->
+      <div class="testimonial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Testimonial</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <h4>Lokesh Parmar</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                          <p>The ambience was really very nice with kind hospitality. We got the rooms at pocket friendly rate. They offered us hot and delicious Poha and Tea for breakfast.</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <h4>Awadhesh Sharma</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                          <p>The rooms were clean, baathrooms in good condition with contineous water supply. The location of this place is very suitable as it is closer to all the tourist spots in Saputara.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <h4>Akash Gupta</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                          <p>Nestled in a picturesque setting, this guest house offers a warm and inviting atmosphere, making every moment of your stay enjoyable.</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <h4>Anjana Lal</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                          <p>More than just a place to stay, this guest house offers an experience—peaceful surroundings, personalized service, and a touch of home-like warmth.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <h4>Smita Joshi</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                          <p>Comfortable, and perfectly located for a relaxing stay.</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <h4>Sarthak Chauhan</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                          <p>Small in size, big on comfort—perfect for a peaceful getaway.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial -->
+      <!--  footer -->
+      <footer id="contact">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="titlepage">
+                        <h2>Contact Us</h2>
+                     </div>
+                     <div class="cont">
+                        <h3>Hotel Hare Krishna</h3><p><span>⏳</span>Live the moment, love the memory...</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="contact">
+                        <p><span>🏠</span> Ropeway Road, Saputara, Dang District, Gujarat-394720.</p>
+                        <p><span>📞</span>+91 7778924066</p>
+                        <p><span>📧</span>hotelharekrishna26@gmail.com</p>
+                    </div>
+                     <!-- <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Full Name" type="type" name="Full Name"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                           </div>
+                           <div class="col-md-12">
+                              <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+                           </div>
+                           <div class="col-sm-12">
+                              <button class="send_btn">Send</button>
+                           </div>
+                        </div>
+                     </form> -->
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>
+
